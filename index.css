@@ -28,8 +28,16 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 20px;
+  padding: 10px 20px;
   background: #f8f4f2;
+ 
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 7;
+
+  box-shadow: 2px 4px 6px rgba(0,0,0,0.3);
 }
 
 .links {
@@ -74,7 +82,7 @@ body {
 /* header responsiveness */
 @media (max-width: 1012px) {
   .nav-bar {
-    padding: 23px 20px;
+    padding: 20px 20px;
     align-items: center;
     display: flex;
   }
@@ -93,11 +101,9 @@ body {
 .hero-container1 {
   width: 100%;
   height: 110vh;
- 
   background-position: center;
   background-size: cover;
   position: relative;
- 
   padding-top: 100px;
 }
 
@@ -196,7 +202,7 @@ body {
     position: relative;
     top: -98px;
     padding: 0;
-    margin: 0;
+    margin-top: 70px;
     height: 70vh;
     .paragraph1 {
       width: 80%;
@@ -216,6 +222,12 @@ body {
     .partners-content {
       margin-top: 0px;
       text-align: center;
+    }
+  }
+  .hero1-contentImg{
+   
+    img{
+      padding-top: 300px;
     }
   }
 }
@@ -288,10 +300,11 @@ body {
     flex-direction: column;
     align-items: start;
     margin-top: 0px;
-    padding: 50px;
+    padding-top: 100px; 
   }
   .steps-container {
     margin-bottom: 70px;
+    padding-top: 100px;
   }
 
   .three-steps {
@@ -403,14 +416,15 @@ video {
   .car-logo-container1 {
     img {
       padding: 0px;
-      width: 50px;
+      width: 30px;
+      gap: 0;
     }
   }
   .car-logo-container2 {
     padding-bottom: 10px;
     img {
-      padding: 0px;
-      width: 50px;
+      
+      width: 30px;
     }
   }
 }
@@ -464,8 +478,15 @@ video {
     font-size: 35px;
   }
   .hero-container5 {
-    height: 200vh;
+    height: 250vh;
   }
+}
+@media(max-width:900px){
+  .hero-container5 {
+    height: 220vh;
+  }
+
+
 }
 
 /* responsiveness ends here */
@@ -485,7 +506,7 @@ video {
   justify-content: space-between;
   background-color: rgb(228, 57, 0.4);
   padding: 50px;
-  margin-top: 300px;
+
   width: 80%;
   border-bottom-right-radius: 15rem;
   border-top-right-radius: 15rem;
@@ -518,18 +539,34 @@ video {
     }
   }
 
-  .hero-container6-content {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    width: 100%;
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0;
-    margin-top: 0px;
+}
+  
+
+@media(max-width:900px){
+  .mockup{
+   display: none;
   }
-  h1 {
-    font-size: 15px;
+  .hero-container6{
+    background-color: #ea3900;
+
   }
+  .hero-container6-text{
+padding-left: 150px;
+width: 100%;
+    h1{
+      font-size: 40px;
+  
+    }
+}
+.hero-container6-content {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 100%;
+  
+  
+}
+
 }
 
 /* Footer Section Styling*/
